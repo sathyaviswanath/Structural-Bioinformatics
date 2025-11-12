@@ -1,4 +1,5 @@
 # **Alzheimer's Disease (AD)**
+
 - **Alzheimer’s disease (AD)** is a **chronic neurodegenerative disorder** and the leading cause of dementia in aging populations worldwide. 
 - It is characterized by progressive memory impairment, cognitive dysfunction, behavioral changes, and ultimately loss of bodily functions. 
 - **Pathologically, AD is marked by two main features in the brain:** Extracellular amyloid-beta (Aβ) plaques and Intracellular neurofibrillary tangles composed of hyperphosphorylated tau protein. 
@@ -6,7 +7,7 @@
 - The etiology of AD involves genetic risk factors (e.g., ApoE4 allele), environmental influences, and cellular mechanisms such as impaired protein clearance and mitochondrial dysfunction. 
 - Early diagnosis and effective treatment remain challenging, underscoring the need for detailed structural and functional studies of critical protein targets.
 
-# **Selected Proteins Details**
+# **Selected Protein Targets Details**
 
 ## **Amyloid-beta (Aβ) precursor protein (APP):**
 
@@ -47,4 +48,6 @@
 **Function:** Key regulator of autophagy, a cellular degradation and recycling pathway.
 
 **Role in AD:** Reduced Beclin-1 impairs clearance of toxic protein aggregates, exacerbating amyloid-beta and tau accumulation.
+
+
 
