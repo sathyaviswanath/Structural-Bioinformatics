@@ -1,0 +1,193 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<title> ChimeraX Log </title>
+<script type="text/javascript">
+window.onload = function() {
+  cxlinks_base="https://www.rbvi.ucsf.edu/chimerax/docs/"
+  if(!window.navigator.userAgent.includes("ChimeraX")){
+    window.onclick = function(e){
+      if(e.target.tagName.toLowerCase()!="a")
+	return true;
+      var url=e.target.getAttribute("href").toLowerCase();
+      if(url.startsWith("help:")){
+	window.location.href = cxlinks_base + url.substring(5);
+	return false;
+      }
+      if(url.startsWith("cxcmd:")){
+	alert("This link only works in a ChimeraX browser and would execute a command.");
+	return false;
+      }
+      return true;
+    }
+    var ls=document.links;
+    for(var i=0;i<ls.length;i++){
+      var link=ls[i];
+      var url=link.getAttribute("href").toLowerCase();
+      if(url.startsWith("cxcmd:"))
+	link.style.color="darkred";
+    }
+  }
+};
+</script>
+<style>
+
+.cxcmd_as_doc {
+    display: inline;
+}
+.cxcmd_as_cmd {
+    display: none;
+}
+</style>
+</head>
+<body>
+<h1> ChimeraX Log </h1>
+UCSF ChimeraX version: 1.11rc202511260300 (2025-11-26)<br>
+© 2016-2025 Regents of the University of California.  All rights reserved.<br>
+<a href="cxcmd:help help:credits.html">How to cite UCSF ChimeraX</a><br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Tau_predicted_model.pdb&quot; format pdb</div><div class="cxcmd_as_cmd"><a href="cxcmd:open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Tau_predicted_model.pdb&quot; format pdb">open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Tau_predicted_model.pdb&quot; format pdb</a></div></div><i>Tau_predicted_model.pdb</i> title:<br><b>SWISS-MODEL SERVER (https://swissmodel.expasy.org) τ protein</b> <a href="cxcmd:log metadata #1">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="2">Chain information for Tau_predicted_model.pdb #1</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select /A:1-758">A</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #1/A">No description available</a></td>
+
+    </tr>
+  </tbody>
+</table><br/>Computing secondary structure<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> 8P34</div><div class="cxcmd_as_cmd"><a href="cxcmd:open 8P34">open 8P34</a></div></div><i>8p34</i> title:<br><b>τ filaments extracted from human brain with the DeltaK281 mutation in MAPT</b> <a href="cxcmd:log metadata #2">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="3">Chain information for 8p34 #2</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+      <th>UniProt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select #2/A:254-378">A</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #2/A">Microtubule-associated protein tau</a></td>
+      <td style="text-align:center"><a title="Show annotations" href="cxcmd:open P10636 from uniprot associate #2/A">TAU_HUMAN</a> <a title="Select sequence" href="cxcmd:select #2/A:254-378">254-378</a></td>
+    </tr>
+  </tbody>
+</table><br/>Computing secondary structure<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#align">sequence align</a> #1 #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence align #1 #2">sequence align #1 #2</a></div></div>Webservices job id: I6UQI0Z2ZKJ0EBB2<br>
+Webservices job finished: I6UQI0Z2ZKJ0EBB2<br>
+Alignment identifier is 1<br>
+Showing conservation header (&quot;seq_conservation&quot; residue attribute) for alignment 1<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/set.html">set</a> bgColor white</div><div class="cxcmd_as_cmd"><a href="cxcmd:set bgColor white">set bgColor white</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/matchmaker.html">matchmaker</a> #1 to #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:matchmaker #1 to #2">matchmaker #1 to #2</a></div></div>
+                    <table border=1 cellpadding=4 cellspacing=0>
+                        <tr>
+                            <th colspan="2">Parameters</th>
+                        </tr>
+                        <tr>
+                            <td>Chain pairing</td>
+                            <td>bb</td>
+                        </tr>
+                        <tr>
+                            <td>Alignment algorithm</td>
+                            <td>Needleman-Wunsch</td>
+                        </tr>
+                        <tr>
+                            <td>Similarity matrix</td>
+                            <td>BLOSUM-62</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>SS fraction</td>
+                            <td>0.3</td>
+                        </tr>
+                        <tr>
+                            <td>Gap open (HH/SS/other)</td>
+                            <td>18/18/6</td>
+                        </tr>
+                        <tr>
+                            <td>Gap extend</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SS matrix</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th></th> <th>H</th> <th>S</th> <th>O</th>
+                                    </tr>
+                                    <tr>
+                                        <th>H</th> <td align="right">6</td> <td align="right">-9</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th> <td></td> <td align="right">6</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>O</th> <td></td> <td></td> <td align="right">4</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr> <td>Iteration cutoff</td> <td>2</td></tr>
+                    </table>
+                <br/>Matchmaker 8p34, chain A (#2) with Tau_predicted_model.pdb, chain A (#1), sequence alignment score = 429.7<br>
+RMSD between 11 pruned atom pairs is 1.217 angstroms; (across all 94 pairs: 26.343)<br>
+<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:view">view</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #1 goldenrod</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #1 goldenrod">color #1 goldenrod</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #2 purple</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #2 purple">color #2 purple</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> #1 #2 models</div><div class="cxcmd_as_cmd"><a href="cxcmd:label #1 #2 models">label #1 #2 models</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#mousemode">ui mousemode</a> right &quot;move label&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui mousemode right &quot;move label&quot;">ui mousemode right &quot;move label&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image14.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image14.png supersample 3">save C:\ProgramData\ChimeraX\image14.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Render/Select by Attribute&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Render/Select by Attribute&quot;">ui tool show &quot;Render/Select by Attribute&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html#byattribute">color byattribute</a> a:bfactor #!1 target c palette 0.26,blue:0.57,white:0.88,red</div><div class="cxcmd_as_cmd"><a href="cxcmd:color byattribute a:bfactor #!1 target c palette 0.26,blue:0.57,white:0.88,red">color byattribute a:bfactor #!1 target c palette 0.26,blue:0.57,white:0.88,red</a></div></div>758 residues, atom bfactor range 0.26 to 0.88<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Show Sequence Viewer&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Show Sequence Viewer&quot;">ui tool show &quot;Show Sequence Viewer&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#chain">sequence chain</a> #1/A</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence chain #1/A">sequence chain #1/A</a></div></div>Alignment identifier is 1/A<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#chain">sequence chain</a> #2/A</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence chain #2/A">sequence chain #2/A</a></div></div>Alignment identifier is 2/A<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/select.html">select</a> #2/A:306</div><div class="cxcmd_as_cmd"><a href="cxcmd:select #2/A:306">select #2/A:306</a></div></div>7 atoms, 6 bonds, 1 residue, 1 model selected<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/select.html">select</a> #1/A:623-695 #2/A:306-378</div><div class="cxcmd_as_cmd"><a href="cxcmd:select #1/A:623-695 #2/A:306-378">select #1/A:623-695 #2/A:306-378</a></div></div>1114 atoms, 1132 bonds, 146 residues, 2 models selected<br>
+Clustal Omega Alignment [ID: 1] region chain A..chain A [623-695] RMSD: 24.222<br>
+<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:surface">surface</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #2 light sea green</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #2 light sea green">color #2 light sea green</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> (#!1-2 &amp; sel) orange</div><div class="cxcmd_as_cmd"><a href="cxcmd:color (#!1-2 &amp; sel) orange">color (#!1-2 &amp; sel) orange</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image15.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image15.png supersample 3">save C:\ProgramData\ChimeraX\image15.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> (#!1-2 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:label (#!1-2 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;">label (#!1-2 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> height 1.7</div><div class="cxcmd_as_cmd"><a href="cxcmd:label height 1.7">label height 1.7</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> height 1.5</div><div class="cxcmd_as_cmd"><a href="cxcmd:label height 1.5">label height 1.5</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> x -10</div><div class="cxcmd_as_cmd"><a href="cxcmd:move x -10">move x -10</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> x  20</div><div class="cxcmd_as_cmd"><a href="cxcmd:move x  20">move x  20</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> y -10</div><div class="cxcmd_as_cmd"><a href="cxcmd:move y -10">move y -10</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> H-Bonds</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show H-Bonds">ui tool show H-Bonds</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/hbonds.html">hbonds</a> sel color #ff0000 select true reveal true log true</div><div class="cxcmd_as_cmd"><a href="cxcmd:hbonds sel color #ff0000 select true reveal true log true">hbonds sel color #ff0000 select true reveal true log true</a></div></div><pre>Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	1 Tau_predicted_model.pdb
+	2 8p34
+
+31 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+Tau_predicted_model.pdb #1/A ALA 106 N    Tau_predicted_model.pdb #1/A GLU 689 OE2  no hydrogen  2.907  N/A
+Tau_predicted_model.pdb #1/A TYR 627 N    Tau_predicted_model.pdb #1/A ILE 625 O    no hydrogen  3.183  N/A
+Tau_predicted_model.pdb #1/A VAL 635 N    Tau_predicted_model.pdb #1/A LEU 632 O    no hydrogen  2.946  N/A
+Tau_predicted_model.pdb #1/A GLN 653 NE2  Tau_predicted_model.pdb #1/A GLU 655 OE1  no hydrogen  2.917  N/A
+Tau_predicted_model.pdb #1/A LYS 657 NZ   Tau_predicted_model.pdb #1/A GLU 655 OE2  no hydrogen  3.027  N/A
+Tau_predicted_model.pdb #1/A LYS 657 NZ   8p34 #2/A GLU 338 OE1                     no hydrogen  3.019  N/A
+Tau_predicted_model.pdb #1/A GLU 659 N    Tau_predicted_model.pdb #1/A LYS 657 O    no hydrogen  3.239  N/A
+Tau_predicted_model.pdb #1/A LEU 661 N    Tau_predicted_model.pdb #1/A GLU 659 O    no hydrogen  3.128  N/A
+Tau_predicted_model.pdb #1/A LYS 664 NZ   Tau_predicted_model.pdb #1/A ASP 662 OD1  no hydrogen  2.544  N/A
+Tau_predicted_model.pdb #1/A SER 669 OG   8p34 #2/A LEU 266 O                       no hydrogen  2.558  N/A
+Tau_predicted_model.pdb #1/A HIS 679 N    Tau_predicted_model.pdb #1/A ILE 677 O    no hydrogen  2.765  N/A
+Tau_predicted_model.pdb #1/A GLY 683 N    Tau_predicted_model.pdb #1/A PRO 681 O    no hydrogen  2.938  N/A
+Tau_predicted_model.pdb #1/A LYS 687 N    Tau_predicted_model.pdb #1/A ASN 685 O    no hydrogen  3.170  N/A
+Tau_predicted_model.pdb #1/A LYS 687 NZ   Tau_predicted_model.pdb #1/A ALA 103 O    no hydrogen  2.837  N/A
+Tau_predicted_model.pdb #1/A LYS 687 NZ   Tau_predicted_model.pdb #1/A GLU 104 O    no hydrogen  2.643  N/A
+Tau_predicted_model.pdb #1/A THR 690 N    Tau_predicted_model.pdb #1/A GLU 104 OE1  no hydrogen  2.862  N/A
+Tau_predicted_model.pdb #1/A PHE 695 N    Tau_predicted_model.pdb #1/A LEU 693 O    no hydrogen  3.097  N/A
+8p34 #2/A SER 258 OG                      Tau_predicted_model.pdb #1/A ASN 676 OD1  no hydrogen  3.217  N/A
+8p34 #2/A THR 263 OG1                     8p34 #2/A SER 352 OG                      no hydrogen  3.274  N/A
+8p34 #2/A LEU 266 N                       Tau_predicted_model.pdb #1/A SER 669 OG   no hydrogen  2.720  N/A
+8p34 #2/A LYS 267 NZ                      Tau_predicted_model.pdb #1/A VAL 667 O    no hydrogen  1.698  N/A
+8p34 #2/A LYS 267 NZ                      8p34 #2/A ASP 348 OD1                     no hydrogen  2.764  N/A
+8p34 #2/A SER 316 N                       8p34 #2/A ASP 314 OD2                     no hydrogen  3.037  N/A
+8p34 #2/A SER 316 OG                      8p34 #2/A ASP 314 OD2                     no hydrogen  3.086  N/A
+8p34 #2/A GLY 335 N                       8p34 #2/A TYR 310 OH                      no hydrogen  2.971  N/A
+8p34 #2/A LYS 340 NZ                      8p34 #2/A GLU 342 OE1                     no hydrogen  2.743  N/A
+8p34 #2/A LYS 347 NZ                      8p34 #2/A ASP 345 OD2                     no hydrogen  2.957  N/A
+8p34 #2/A SER 352 OG                      8p34 #2/A THR 263 OG1                     no hydrogen  3.274  N/A
+8p34 #2/A THR 361 OG1                     8p34 #2/A THR 373 OG1                     no hydrogen  2.865  N/A
+8p34 #2/A THR 373 OG1                     8p34 #2/A THR 361 OG1                     no hydrogen  2.865  N/A
+8p34 #2/A HIS 374 ND1                     Tau_predicted_model.pdb #1/A LYS 413 O    no hydrogen  3.077  N/A
+</pre><br/>31 hydrogen bonds found<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image16.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image16.png supersample 3">save C:\ProgramData\ChimeraX\image16.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/log.html#save">log save</a> C:/ProgramData/ChimeraX/Tau_log.html</div><div class="cxcmd_as_cmd"><a href="cxcmd:log save C:/ProgramData/ChimeraX/Tau_log.html">log save C:/ProgramData/ChimeraX/Tau_log.html</a></div></div></body>
+</html>

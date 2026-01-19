@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<title> ChimeraX Log </title>
+<script type="text/javascript">
+window.onload = function() {
+  cxlinks_base="https://www.rbvi.ucsf.edu/chimerax/docs/"
+  if(!window.navigator.userAgent.includes("ChimeraX")){
+    window.onclick = function(e){
+      if(e.target.tagName.toLowerCase()!="a")
+	return true;
+      var url=e.target.getAttribute("href").toLowerCase();
+      if(url.startsWith("help:")){
+	window.location.href = cxlinks_base + url.substring(5);
+	return false;
+      }
+      if(url.startsWith("cxcmd:")){
+	alert("This link only works in a ChimeraX browser and would execute a command.");
+	return false;
+      }
+      return true;
+    }
+    var ls=document.links;
+    for(var i=0;i<ls.length;i++){
+      var link=ls[i];
+      var url=link.getAttribute("href").toLowerCase();
+      if(url.startsWith("cxcmd:"))
+	link.style.color="darkred";
+    }
+  }
+};
+</script>
+<style>
+
+.cxcmd_as_doc {
+    display: inline;
+}
+.cxcmd_as_cmd {
+    display: none;
+}
+</style>
+</head>
+<body>
+<h1> ChimeraX Log </h1>
+UCSF ChimeraX version: 1.11rc202511260300 (2025-11-26)<br>
+© 2016-2025 Regents of the University of California.  All rights reserved.<br>
+<a href="cxcmd:help help:credits.html">How to cite UCSF ChimeraX</a><br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Beclin_predicted_model.pdb&quot; format pdb</div><div class="cxcmd_as_cmd"><a href="cxcmd:open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Beclin_predicted_model.pdb&quot; format pdb">open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Beclin_predicted_model.pdb&quot; format pdb</a></div></div><i>Beclin_predicted_model.pdb</i> title:<br><b>SWISS-MODEL SERVER (https://swissmodel.expasy.org) Beclin</b> <a href="cxcmd:log metadata #1">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="2">Chain information for Beclin_predicted_model.pdb #1</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select /A:139-269">A</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #1/A">No description available</a></td>
+
+    </tr>
+  </tbody>
+</table><br/>Computing secondary structure<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> 4ddp</div><div class="cxcmd_as_cmd"><a href="cxcmd:open 4ddp">open 4ddp</a></div></div><i>4ddp</i> title:<br><b>crystal structure of Beclin 1 evolutionarily conserved domain(ECD)</b> <a href="cxcmd:log metadata #2">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="3">Chain information for 4ddp #2</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+      <th>UniProt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select #2/A:248-447">A</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #2/A">Beclin-1</a></td>
+      <td style="text-align:center"><a title="Show annotations" href="cxcmd:open Q14457 from uniprot associate #2/A">BECN1_HUMAN</a> <a title="Select sequence" href="cxcmd:select #2/A:241-450">241-450</a></td>
+    </tr>
+  </tbody>
+</table><br/>1581 atoms have anisotropic B-factors.  Depict anisotropic information with <b><a href="cxcmd:help help:user/tools/thermalellipsoids.html">Thermal Ellipsoids</a></b> [<a href="cxcmd:ui tool show 'Thermal Ellipsoids'">start&nbsp;tool...</a>] or the <b><a href="cxcmd:help aniso">aniso</a></b> command.<br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#align">sequence align</a> #1 #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence align #1 #2">sequence align #1 #2</a></div></div>Webservices job id: 0CDCNV9S18N5SSIV<br>
+Alignment identifier is 1<br>
+Showing conservation header (&quot;seq_conservation&quot; residue attribute) for alignment 1<br>
+Webservices job finished: 0CDCNV9S18N5SSIV<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/matchmaker.html">matchmaker</a> #1 to #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:matchmaker #1 to #2">matchmaker #1 to #2</a></div></div>
+                    <table border=1 cellpadding=4 cellspacing=0>
+                        <tr>
+                            <th colspan="2">Parameters</th>
+                        </tr>
+                        <tr>
+                            <td>Chain pairing</td>
+                            <td>bb</td>
+                        </tr>
+                        <tr>
+                            <td>Alignment algorithm</td>
+                            <td>Needleman-Wunsch</td>
+                        </tr>
+                        <tr>
+                            <td>Similarity matrix</td>
+                            <td>BLOSUM-62</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>SS fraction</td>
+                            <td>0.3</td>
+                        </tr>
+                        <tr>
+                            <td>Gap open (HH/SS/other)</td>
+                            <td>18/18/6</td>
+                        </tr>
+                        <tr>
+                            <td>Gap extend</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SS matrix</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th></th> <th>H</th> <th>S</th> <th>O</th>
+                                    </tr>
+                                    <tr>
+                                        <th>H</th> <td align="right">6</td> <td align="right">-9</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th> <td></td> <td align="right">6</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>O</th> <td></td> <td></td> <td align="right">4</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr> <td>Iteration cutoff</td> <td>2</td></tr>
+                    </table>
+                <br/>Matchmaker 4ddp, chain A (#2) with Beclin_predicted_model.pdb, chain A (#1), sequence alignment score = 120.5<br>
+RMSD between 14 pruned atom pairs is 0.754 angstroms; (across all 18 pairs: 4.437)<br>
+<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:view">view</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/set.html">set</a> bgColor white</div><div class="cxcmd_as_cmd"><a href="cxcmd:set bgColor white">set bgColor white</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #2 cornflower blue</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #2 cornflower blue">color #2 cornflower blue</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> #1 #2 models</div><div class="cxcmd_as_cmd"><a href="cxcmd:label #1 #2 models">label #1 #2 models</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> height 4</div><div class="cxcmd_as_cmd"><a href="cxcmd:label height 4">label height 4</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#mousemode">ui mousemode</a> right &quot;move label&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui mousemode right &quot;move label&quot;">ui mousemode right &quot;move label&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> y 20</div><div class="cxcmd_as_cmd"><a href="cxcmd:move y 20">move y 20</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> x 20</div><div class="cxcmd_as_cmd"><a href="cxcmd:move x 20">move x 20</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> x -40</div><div class="cxcmd_as_cmd"><a href="cxcmd:move x -40">move x -40</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image11.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image11.png supersample 3">save C:\ProgramData\ChimeraX\image11.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Render/Select by Attribute&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Render/Select by Attribute&quot;">ui tool show &quot;Render/Select by Attribute&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html#byattribute">color byattribute</a> a:bfactor #!1 target c palette 0.21,blue:0.475,white:0.74,red</div><div class="cxcmd_as_cmd"><a href="cxcmd:color byattribute a:bfactor #!1 target c palette 0.21,blue:0.475,white:0.74,red">color byattribute a:bfactor #!1 target c palette 0.21,blue:0.475,white:0.74,red</a></div></div>131 residues, atom bfactor range 0.21 to 0.74<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:surface">surface</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Show Sequence Viewer&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Show Sequence Viewer&quot;">ui tool show &quot;Show Sequence Viewer&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#chain">sequence chain</a> #1/A</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence chain #1/A">sequence chain #1/A</a></div></div>Alignment identifier is 1/A<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#chain">sequence chain</a> #2/A</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence chain #2/A">sequence chain #2/A</a></div></div>Alignment identifier is 2/A<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/select.html">select</a> #1/A:248-269</div><div class="cxcmd_as_cmd"><a href="cxcmd:select #1/A:248-269">select #1/A:248-269</a></div></div>183 atoms, 183 bonds, 22 residues, 1 model selected<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:surface">surface</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> (#!1 &amp; sel) orange</div><div class="cxcmd_as_cmd"><a href="cxcmd:color (#!1 &amp; sel) orange">color (#!1 &amp; sel) orange</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image12.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image12.png supersample 3">save C:\ProgramData\ChimeraX\image12.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> x -20</div><div class="cxcmd_as_cmd"><a href="cxcmd:move x -20">move x -20</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> (#!1 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:label (#!1 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;">label (#!1 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> height 1</div><div class="cxcmd_as_cmd"><a href="cxcmd:label height 1">label height 1</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a> sel</div><div class="cxcmd_as_cmd"><a href="cxcmd:view sel">view sel</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/move.html">move</a> x 10</div><div class="cxcmd_as_cmd"><a href="cxcmd:move x 10">move x 10</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> H-Bonds</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show H-Bonds">ui tool show H-Bonds</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/hbonds.html">hbonds</a> sel color #ff0000 select true reveal true log true</div><div class="cxcmd_as_cmd"><a href="cxcmd:hbonds sel color #ff0000 select true reveal true log true">hbonds sel color #ff0000 select true reveal true log true</a></div></div><pre>Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	1 Beclin_predicted_model.pdb
+	2 4ddp
+
+57 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+Beclin_predicted_model.pdb #1/A LYS 248 N    Beclin_predicted_model.pdb #1/A ASP 244 O    no hydrogen            3.092  N/A
+Beclin_predicted_model.pdb #1/A SER 249 N    Beclin_predicted_model.pdb #1/A GLU 246 O    no hydrogen            3.094  N/A
+Beclin_predicted_model.pdb #1/A SER 249 N    4ddp #2/A HOH 569 O                          no hydrogen            2.989  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   Beclin_predicted_model.pdb #1/A ASP 245 O    no hydrogen            3.122  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   Beclin_predicted_model.pdb #1/A GLU 246 O    no hydrogen            3.402  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   4ddp #2/A ASP 405 OD1                        no hydrogen            3.198  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   4ddp #2/A ASP 405 OD2                        no hydrogen            3.527  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   4ddp #2/A HOH 544 O                          no hydrogen            1.516  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   4ddp #2/A HOH 561 O                          no hydrogen            2.104  N/A
+Beclin_predicted_model.pdb #1/A SER 249 OG   4ddp #2/A HOH 569 O                          no hydrogen            2.529  N/A
+Beclin_predicted_model.pdb #1/A VAL 250 N    Beclin_predicted_model.pdb #1/A GLU 246 O    no hydrogen            2.728  N/A
+Beclin_predicted_model.pdb #1/A VAL 250 N    4ddp #2/A HOH 569 O                          no hydrogen            2.919  N/A
+Beclin_predicted_model.pdb #1/A ASN 252 N    4ddp #2/A SER 249 OG                         no hydrogen            2.806  N/A
+Beclin_predicted_model.pdb #1/A GLN 253 N    4ddp #2/A SER 249 O                          no hydrogen            3.423  N/A
+Beclin_predicted_model.pdb #1/A MET 254 N    Beclin_predicted_model.pdb #1/A VAL 250 O    no hydrogen            3.108  N/A
+Beclin_predicted_model.pdb #1/A MET 254 N    4ddp #2/A VAL 250 O                          no hydrogen            3.027  N/A
+Beclin_predicted_model.pdb #1/A ARG 255 N    Beclin_predicted_model.pdb #1/A GLU 251 O    no hydrogen            3.242  N/A
+Beclin_predicted_model.pdb #1/A ARG 255 N    4ddp #2/A GLU 251 O                          no hydrogen            2.928  N/A
+Beclin_predicted_model.pdb #1/A ARG 255 NH2  Beclin_predicted_model.pdb #1/A ASN 252 OD1  no hydrogen            3.039  N/A
+Beclin_predicted_model.pdb #1/A ARG 255 NH2  Beclin_predicted_model.pdb #1/A TYR 256 OH   no hydrogen            3.102  N/A
+Beclin_predicted_model.pdb #1/A TYR 256 N    Beclin_predicted_model.pdb #1/A ASN 252 O    no hydrogen            3.018  N/A
+Beclin_predicted_model.pdb #1/A TYR 256 N    4ddp #2/A ASN 252 O                          no hydrogen            3.246  N/A
+Beclin_predicted_model.pdb #1/A ALA 257 N    Beclin_predicted_model.pdb #1/A GLN 253 O    no hydrogen            2.773  N/A
+Beclin_predicted_model.pdb #1/A ALA 257 N    4ddp #2/A GLN 253 O                          no hydrogen            3.160  N/A
+Beclin_predicted_model.pdb #1/A GLN 258 N    Beclin_predicted_model.pdb #1/A MET 254 O    no hydrogen            3.078  N/A
+Beclin_predicted_model.pdb #1/A GLN 258 N    4ddp #2/A MET 254 O                          no hydrogen            2.857  N/A
+Beclin_predicted_model.pdb #1/A GLN 258 NE2  4ddp #2/A ILE 276 O                          no hydrogen            2.869  N/A
+Beclin_predicted_model.pdb #1/A THR 259 N    Beclin_predicted_model.pdb #1/A ARG 255 O    no hydrogen            2.947  N/A
+Beclin_predicted_model.pdb #1/A THR 259 N    4ddp #2/A ARG 255 O                          no hydrogen            3.188  N/A
+Beclin_predicted_model.pdb #1/A THR 259 OG1  Beclin_predicted_model.pdb #1/A ARG 255 O    no hydrogen            2.959  N/A
+Beclin_predicted_model.pdb #1/A THR 259 OG1  4ddp #2/A ARG 255 O                          no hydrogen            2.923  N/A
+Beclin_predicted_model.pdb #1/A THR 259 OG1  4ddp #2/A THR 259 OG1                        no hydrogen            1.192  N/A
+Beclin_predicted_model.pdb #1/A GLN 260 N    Beclin_predicted_model.pdb #1/A TYR 256 O    no hydrogen            3.044  N/A
+Beclin_predicted_model.pdb #1/A GLN 260 NE2  4ddp #2/A SER 445 OG                         no hydrogen            2.903  N/A
+Beclin_predicted_model.pdb #1/A LEU 261 N    4ddp #2/A ALA 257 O                          no hydrogen            3.349  N/A
+Beclin_predicted_model.pdb #1/A ASP 262 N    Beclin_predicted_model.pdb #1/A GLN 258 O    no hydrogen            3.120  N/A
+Beclin_predicted_model.pdb #1/A ASP 262 N    4ddp #2/A GLN 258 O                          no hydrogen            3.355  N/A
+Beclin_predicted_model.pdb #1/A LYS 263 N    4ddp #2/A GLN 260 O                          no hydrogen            2.630  N/A
+Beclin_predicted_model.pdb #1/A LYS 263 NZ   Beclin_predicted_model.pdb #1/A GLN 260 OE1  no hydrogen            2.684  N/A
+Beclin_predicted_model.pdb #1/A LYS 263 NZ   4ddp #2/A GLN 260 OE1                        no hydrogen            1.992  N/A
+Beclin_predicted_model.pdb #1/A ASN 268 N    Beclin_predicted_model.pdb #1/A LYS 265 O    no hydrogen            3.217  N/A
+Beclin_predicted_model.pdb #1/A VAL 269 N    Beclin_predicted_model.pdb #1/A LYS 265 O    no hydrogen            2.939  N/A
+4ddp #2/A MET 254 N                          Beclin_predicted_model.pdb #1/A VAL 250 O    4ddp #2/A MET 254 H    3.036  2.296
+4ddp #2/A ARG 255 N                          Beclin_predicted_model.pdb #1/A GLU 251 O    4ddp #2/A ARG 255 H    3.341  2.570
+4ddp #2/A TYR 256 N                          Beclin_predicted_model.pdb #1/A ASN 252 O    4ddp #2/A TYR 256 H    2.758  2.011
+4ddp #2/A ALA 257 N                          Beclin_predicted_model.pdb #1/A GLN 253 O    4ddp #2/A ALA 257 H    2.817  1.978
+4ddp #2/A GLN 258 N                          Beclin_predicted_model.pdb #1/A MET 254 O    4ddp #2/A GLN 258 H    3.227  2.501
+4ddp #2/A THR 259 N                          Beclin_predicted_model.pdb #1/A TYR 256 O    4ddp #2/A THR 259 H    2.849  2.207
+4ddp #2/A THR 259 OG1                        Beclin_predicted_model.pdb #1/A ARG 255 O    4ddp #2/A THR 259 HG1  3.479  2.675
+4ddp #2/A GLN 260 N                          Beclin_predicted_model.pdb #1/A TYR 256 O    4ddp #2/A GLN 260 H    3.216  2.394
+4ddp #2/A LEU 261 N                          Beclin_predicted_model.pdb #1/A ALA 257 O    4ddp #2/A LEU 261 H    3.382  2.572
+4ddp #2/A ASP 262 N                          Beclin_predicted_model.pdb #1/A GLN 258 O    4ddp #2/A ASP 262 H    2.618  1.951
+4ddp #2/A LEU 264 N                          Beclin_predicted_model.pdb #1/A LEU 261 O    4ddp #2/A LEU 264 H    2.325  1.480
+4ddp #2/A HOH 533 O                          Beclin_predicted_model.pdb #1/A GLU 251 OE2  no hydrogen            1.852  N/A
+4ddp #2/A HOH 544 O                          Beclin_predicted_model.pdb #1/A SER 249 OG   no hydrogen            1.516  N/A
+4ddp #2/A HOH 561 O                          Beclin_predicted_model.pdb #1/A SER 249 OG   no hydrogen            2.104  N/A
+4ddp #2/A HOH 569 O                          Beclin_predicted_model.pdb #1/A SER 249 OG   no hydrogen            2.529  N/A
+</pre><br/>57 hydrogen bonds found<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image13.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image13.png supersample 3">save C:\ProgramData\ChimeraX\image13.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/log.html#save">log save</a> C:/ProgramData/ChimeraX/Beclin1_log.html</div><div class="cxcmd_as_cmd"><a href="cxcmd:log save C:/ProgramData/ChimeraX/Beclin1_log.html">log save C:/ProgramData/ChimeraX/Beclin1_log.html</a></div></div></body>
+</html>

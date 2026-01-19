@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<title> ChimeraX Log </title>
+<script type="text/javascript">
+window.onload = function() {
+  cxlinks_base="https://www.rbvi.ucsf.edu/chimerax/docs/"
+  if(!window.navigator.userAgent.includes("ChimeraX")){
+    window.onclick = function(e){
+      if(e.target.tagName.toLowerCase()!="a")
+	return true;
+      var url=e.target.getAttribute("href").toLowerCase();
+      if(url.startsWith("help:")){
+	window.location.href = cxlinks_base + url.substring(5);
+	return false;
+      }
+      if(url.startsWith("cxcmd:")){
+	alert("This link only works in a ChimeraX browser and would execute a command.");
+	return false;
+      }
+      return true;
+    }
+    var ls=document.links;
+    for(var i=0;i<ls.length;i++){
+      var link=ls[i];
+      var url=link.getAttribute("href").toLowerCase();
+      if(url.startsWith("cxcmd:"))
+	link.style.color="darkred";
+    }
+  }
+};
+</script>
+<style>
+
+.cxcmd_as_doc {
+    display: inline;
+}
+.cxcmd_as_cmd {
+    display: none;
+}
+</style>
+</head>
+<body>
+<h1> ChimeraX Log </h1>
+UCSF ChimeraX version: 1.11rc202511260300 (2025-11-26)<br>
+© 2016-2025 Regents of the University of California.  All rights reserved.<br>
+<a href="cxcmd:help help:credits.html">How to cite UCSF ChimeraX</a><br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Amyloid_beta_predicted_model.pdb&quot; format pdb</div><div class="cxcmd_as_cmd"><a href="cxcmd:open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Amyloid_beta_predicted_model.pdb&quot; format pdb">open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Amyloid_beta_predicted_model.pdb&quot; format pdb</a></div></div><i>Amyloid_beta_predicted_model.pdb</i> title:<br><b>SWISS-MODEL SERVER (https://swissmodel.expasy.org) amyloid_beta precursor protein</b> <a href="cxcmd:log metadata #1">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="2">Chain information for Amyloid_beta_predicted_model.pdb #1</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select /B:294-342">B</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #1/B">No description available</a></td>
+
+    </tr>
+  </tbody>
+</table><br/>Computing secondary structure<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> 5BUO</div><div class="cxcmd_as_cmd"><a href="cxcmd:open 5BUO">open 5BUO</a></div></div><i>5buo</i> title:<br><b>A receptor molecule</b> <a href="cxcmd:log metadata #2">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="3">Chain information for 5buo #2</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+      <th>UniProt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select #2/A:310-494">A</a> <a title="Select chain" href="cxcmd:select #2/B:538-549">B</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #2/A#2/B">Amyloid beta A4 protein</a></td>
+      <td style="text-align:center"><a title="Show annotations" href="cxcmd:open P05067 from uniprot associate #2/A,B">A4_HUMAN</a> <a title="Select sequence" href="cxcmd:select #2/A,B:295-635">295-635</a></td>
+    </tr>
+  </tbody>
+</table><br/><table border=1 cellpadding=4 cellspacing=0>
+ <thead>
+  <tr>
+   <th>Non-standard residues in 5buo #2</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :ACT">ACT</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/ACT">acetate ion</a></td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :CA">CA</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/CA">calcium ion</a></td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :GOL">GOL</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/GOL">glycerol</a> (glycerin; propane-1,2,3-triol)</td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :IDS">IDS</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/IDS">2-O-sulfo-alpha-L-idopyranuronic acid</a> (O2-SULFO-GLUCURONIC ACID; 2-O-sulfo-alpha-L-iduronic acid; 2-O-sulfo-L-iduronic acid; 2-O-sulfo-iduronic acid)</td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :MG">MG</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/MG">magnesium ion</a></td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :SCN">SCN</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/SCN">thiocyanate ion</a></td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :SGN">SGN</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/SGN">2-deoxy-6-O-sulfo-2-(sulfoamino)-alpha-D-glucopyranose</a> (N,O6-DISULFO-GLUCOSAMINE; 6-O-sulfo-N-sulfo-alpha-D-glucosamine; 2-deoxy-6-O-sulfo-2-(sulfoamino)-alpha-D-glucose; 2-deoxy-6-O-sulfo-2-(sulfoamino)-D-glucose; 2-deoxy-6-O-sulfo-2-(sulfoamino)-glucose)</td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :SO4">SO4</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/SO4">sulfate ion</a></td>
+  </tr>
+  <tr>
+   <td><a title="select residue" href="cxcmd:sel :ZN">ZN</a> &mdash; <a title="show residue info" href="http://www.rcsb.org/ligand/ZN">zinc ion</a></td>
+  </tr>
+ </tbody>
+</table><br/>8 atoms have alternate locations.  Control/examine alternate locations with <b><a href="cxcmd:help help:user/tools/altlocexplorer.html">Altloc Explorer</a></b> [<a href="cxcmd:ui tool show 'Altloc Explorer'">start&nbsp;tool...</a>] or the <b><a href="cxcmd:help altlocs">altlocs</a></b> command.<br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#align">sequence align</a> #1 #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence align #1 #2">sequence align #1 #2</a></div></div>Webservices job id: WGTPQWSP3TX81XGF<br>
+2026-01-12 19:48:11,559 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;ConnectionResetError(10054, &#x27;An existing connection was forcibly closed by the remote host&#x27;, None, 10054, None)&#x27;: /cxservices/api/v1/chimerax/jobs/WGTPQWSP3TX81XGF/status<br>
+Webservices job finished: WGTPQWSP3TX81XGF<br>
+Alignment identifier is 1<br>
+Showing conservation header (&quot;seq_conservation&quot; residue attribute) for alignment 1<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/matchmaker.html">matchmaker</a> #1 to #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:matchmaker #1 to #2">matchmaker #1 to #2</a></div></div>
+                    <table border=1 cellpadding=4 cellspacing=0>
+                        <tr>
+                            <th colspan="2">Parameters</th>
+                        </tr>
+                        <tr>
+                            <td>Chain pairing</td>
+                            <td>bb</td>
+                        </tr>
+                        <tr>
+                            <td>Alignment algorithm</td>
+                            <td>Needleman-Wunsch</td>
+                        </tr>
+                        <tr>
+                            <td>Similarity matrix</td>
+                            <td>BLOSUM-62</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>SS fraction</td>
+                            <td>0.3</td>
+                        </tr>
+                        <tr>
+                            <td>Gap open (HH/SS/other)</td>
+                            <td>18/18/6</td>
+                        </tr>
+                        <tr>
+                            <td>Gap extend</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SS matrix</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th></th> <th>H</th> <th>S</th> <th>O</th>
+                                    </tr>
+                                    <tr>
+                                        <th>H</th> <td align="right">6</td> <td align="right">-9</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th> <td></td> <td align="right">6</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>O</th> <td></td> <td></td> <td align="right">4</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr> <td>Iteration cutoff</td> <td>2</td></tr>
+                    </table>
+                <br/>Matchmaker 5buo, chain A (#2) with Amyloid_beta_predicted_model.pdb, chain B (#1), sequence alignment score = 1.5<br>
+RMSD between 8 pruned atom pairs is 0.333 angstroms; (across all 11 pairs: 5.929)<br>
+<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:view">view</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #2 light sea green</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #2 light sea green">color #2 light sea green</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/set.html">set</a> bgColor white</div><div class="cxcmd_as_cmd"><a href="cxcmd:set bgColor white">set bgColor white</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> #1 #2  models</div><div class="cxcmd_as_cmd"><a href="cxcmd:label #1 #2  models">label #1 #2  models</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> height 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:label height 3">label height 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#mousemode">ui mousemode</a> right &quot;move label&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui mousemode right &quot;move label&quot;">ui mousemode right &quot;move label&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image1.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image1.png supersample 3">save C:\ProgramData\ChimeraX\image1.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Render/Select by Attribute&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Render/Select by Attribute&quot;">ui tool show &quot;Render/Select by Attribute&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html#byattribute">color byattribute</a> a:bfactor #!1 target c palette 0.39,blue:0.58,white:0.77,red</div><div class="cxcmd_as_cmd"><a href="cxcmd:color byattribute a:bfactor #!1 target c palette 0.39,blue:0.58,white:0.77,red">color byattribute a:bfactor #!1 target c palette 0.39,blue:0.58,white:0.77,red</a></div></div>49 residues, atom bfactor range 0.39 to 0.77<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Show Sequence Viewer&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Show Sequence Viewer&quot;">ui tool show &quot;Show Sequence Viewer&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#chain">sequence chain</a> #1/B</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence chain #1/B">sequence chain #1/B</a></div></div>Alignment identifier is 1/B<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/select.html">select</a> #1/B:334-341</div><div class="cxcmd_as_cmd"><a href="cxcmd:select #1/B:334-341">select #1/B:334-341</a></div></div>62 atoms, 62 bonds, 8 residues, 1 model selected<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:surface">surface</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> (#!1 &amp; sel) yellow</div><div class="cxcmd_as_cmd"><a href="cxcmd:color (#!1 &amp; sel) yellow">color (#!1 &amp; sel) yellow</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image2.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image2.png supersample 3">save C:\ProgramData\ChimeraX\image2.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html#hidePatches">surface hidePatches</a> (#!1 &amp; sel)</div><div class="cxcmd_as_cmd"><a href="cxcmd:surface hidePatches (#!1 &amp; sel)">surface hidePatches (#!1 &amp; sel)</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a> (#!1 &amp; sel)</div><div class="cxcmd_as_cmd"><a href="cxcmd:surface (#!1 &amp; sel)">surface (#!1 &amp; sel)</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html#hidePatches">surface hidePatches</a> (#!1 &amp; sel)</div><div class="cxcmd_as_cmd"><a href="cxcmd:surface hidePatches (#!1 &amp; sel)">surface hidePatches (#!1 &amp; sel)</a></div></div>[Repeated 1 time(s)]<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> (#!1 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:label (#!1 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;">label (#!1 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a> sel</div><div class="cxcmd_as_cmd"><a href="cxcmd:view sel">view sel</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> H-Bonds</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show H-Bonds">ui tool show H-Bonds</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/hbonds.html">hbonds</a> sel color #d50000 select true reveal true log true</div><div class="cxcmd_as_cmd"><a href="cxcmd:hbonds sel color #d50000 select true reveal true log true">hbonds sel color #d50000 select true reveal true log true</a></div></div><pre>Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	1 Amyloid_beta_predicted_model.pdb
+	2 5buo
+
+20 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+Amyloid_beta_predicted_model.pdb #1/B TYR 336 N  Amyloid_beta_predicted_model.pdb #1/B THR 333 OG1  no hydrogen  3.166  N/A
+Amyloid_beta_predicted_model.pdb #1/B CYS 337 N  Amyloid_beta_predicted_model.pdb #1/B THR 333 O    no hydrogen  3.038  N/A
+Amyloid_beta_predicted_model.pdb #1/B CYS 337 N  5buo #2/A ASN 311 O                                no hydrogen  3.287  N/A
+Amyloid_beta_predicted_model.pdb #1/B MET 338 N  Amyloid_beta_predicted_model.pdb #1/B GLU 334 O    no hydrogen  2.923  N/A
+Amyloid_beta_predicted_model.pdb #1/B MET 338 N  5buo #2/A GLU 312 O                                no hydrogen  3.290  N/A
+Amyloid_beta_predicted_model.pdb #1/B ALA 339 N  Amyloid_beta_predicted_model.pdb #1/B GLU 335 O    no hydrogen  2.825  N/A
+Amyloid_beta_predicted_model.pdb #1/B ALA 339 N  5buo #2/A HIS 313 O                                no hydrogen  2.933  N/A
+Amyloid_beta_predicted_model.pdb #1/B VAL 340 N  Amyloid_beta_predicted_model.pdb #1/B TYR 336 O    no hydrogen  3.102  N/A
+Amyloid_beta_predicted_model.pdb #1/B VAL 340 N  5buo #2/A ALA 314 O                                no hydrogen  3.390  N/A
+Amyloid_beta_predicted_model.pdb #1/B CYS 341 N  Amyloid_beta_predicted_model.pdb #1/B CYS 337 O    no hydrogen  2.871  N/A
+Amyloid_beta_predicted_model.pdb #1/B CYS 341 N  5buo #2/A HIS 315 O                                no hydrogen  3.087  N/A
+Amyloid_beta_predicted_model.pdb #1/B GLY 342 N  Amyloid_beta_predicted_model.pdb #1/B MET 338 O    no hydrogen  2.893  N/A
+5buo #2/A PHE 316 N                              Amyloid_beta_predicted_model.pdb #1/B GLU 334 O    no hydrogen  2.924  N/A
+5buo #2/A GLN 317 N                              Amyloid_beta_predicted_model.pdb #1/B GLU 335 O    no hydrogen  3.080  N/A
+5buo #2/A LYS 318 N                              Amyloid_beta_predicted_model.pdb #1/B TYR 336 O    no hydrogen  3.166  N/A
+5buo #2/A ALA 319 N                              Amyloid_beta_predicted_model.pdb #1/B CYS 337 O    no hydrogen  3.094  N/A
+5buo #2/A LYS 320 N                              Amyloid_beta_predicted_model.pdb #1/B MET 338 O    no hydrogen  3.125  N/A
+5buo #2/A GLU 321 N                              Amyloid_beta_predicted_model.pdb #1/B ALA 339 O    no hydrogen  3.346  N/A
+5buo #2/A ARG 322 N                              Amyloid_beta_predicted_model.pdb #1/B VAL 340 O    no hydrogen  2.965  N/A
+5buo #2/A HOH 821 O                              Amyloid_beta_predicted_model.pdb #1/B CYS 341 O    no hydrogen  3.581  N/A
+</pre><br/>20 hydrogen bonds found<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image3.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image3.png supersample 3">save C:\ProgramData\ChimeraX\image3.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/log.html#save">log save</a> C:/ProgramData/ChimeraX/Amyloid_beta_log.html</div><div class="cxcmd_as_cmd"><a href="cxcmd:log save C:/ProgramData/ChimeraX/Amyloid_beta_log.html">log save C:/ProgramData/ChimeraX/Amyloid_beta_log.html</a></div></div></body>
+</html>

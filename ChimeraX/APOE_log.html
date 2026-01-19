@@ -1,0 +1,178 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<title> ChimeraX Log </title>
+<script type="text/javascript">
+window.onload = function() {
+  cxlinks_base="https://www.rbvi.ucsf.edu/chimerax/docs/"
+  if(!window.navigator.userAgent.includes("ChimeraX")){
+    window.onclick = function(e){
+      if(e.target.tagName.toLowerCase()!="a")
+	return true;
+      var url=e.target.getAttribute("href").toLowerCase();
+      if(url.startsWith("help:")){
+	window.location.href = cxlinks_base + url.substring(5);
+	return false;
+      }
+      if(url.startsWith("cxcmd:")){
+	alert("This link only works in a ChimeraX browser and would execute a command.");
+	return false;
+      }
+      return true;
+    }
+    var ls=document.links;
+    for(var i=0;i<ls.length;i++){
+      var link=ls[i];
+      var url=link.getAttribute("href").toLowerCase();
+      if(url.startsWith("cxcmd:"))
+	link.style.color="darkred";
+    }
+  }
+};
+</script>
+<style>
+
+.cxcmd_as_doc {
+    display: inline;
+}
+.cxcmd_as_cmd {
+    display: none;
+}
+</style>
+</head>
+<body>
+<h1> ChimeraX Log </h1>
+UCSF ChimeraX version: 1.11rc202511260300 (2025-11-26)<br>
+© 2016-2025 Regents of the University of California.  All rights reserved.<br>
+<a href="cxcmd:help help:credits.html">How to cite UCSF ChimeraX</a><br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Apolipoprotein_predicted_model.pdb&quot; format pdb</div><div class="cxcmd_as_cmd"><a href="cxcmd:open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Apolipoprotein_predicted_model.pdb&quot; format pdb">open &quot;C:\Users\sathy\OneDrive\Desktop\Sathya - BioIT\Project\Project 4 - Structural Bioinformatics\SwissModel_results\Apolipoprotein_predicted_model.pdb&quot; format pdb</a></div></div><i>Apolipoprotein_predicted_model.pdb</i> title:<br><b>SWISS-MODEL SERVER (https://swissmodel.expasy.org) Apolipoprotein</b> <a href="cxcmd:log metadata #1">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="2">Chain information for Apolipoprotein_predicted_model.pdb #1</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select /A:30-203">A</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #1/A">No description available</a></td>
+
+    </tr>
+  </tbody>
+</table><br/>Computing secondary structure<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/open.html">open</a> 1B68</div><div class="cxcmd_as_cmd"><a href="cxcmd:open 1B68">open 1B68</a></div></div><i>1b68</i> title:<br><b>Apolipoprotein E4 (APOE4), 22K fragment</b> <a href="cxcmd:log metadata #2">[more&nbsp;info...]</a><br><br/><table border=1 cellpadding=4 cellspacing=0>
+  <thead>
+    <tr>
+      <th colspan="3">Chain information for 1b68 #2</th>
+    </tr>
+    <tr>
+      <th>Chain</th>
+      <th>Description</th>
+      <th>UniProt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><a title="Select chain" href="cxcmd:select #2/A:23-162">A</a></td>
+      <td><a title="Show sequence" href="cxcmd:sequence chain #2/A">APOLIPOPROTEIN E</a></td>
+      <td style="text-align:center"><a title="Show annotations" href="cxcmd:open P02649 from uniprot associate #2/A">APOE_HUMAN</a> <a title="Select sequence" href="cxcmd:select #2/A:1-191">1-191</a></td>
+    </tr>
+  </tbody>
+</table><br/>34 atoms have alternate locations.  Control/examine alternate locations with <b><a href="cxcmd:help help:user/tools/altlocexplorer.html">Altloc Explorer</a></b> [<a href="cxcmd:ui tool show 'Altloc Explorer'">start&nbsp;tool...</a>] or the <b><a href="cxcmd:help altlocs">altlocs</a></b> command.<br/><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#align">sequence align</a> #1 #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence align #1 #2">sequence align #1 #2</a></div></div>Webservices job id: 96HDQ3KC48O7GVIZ<br>
+Webservices job finished: 96HDQ3KC48O7GVIZ<br>
+2026-01-12 20:58:12,751 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;RemoteDisconnected(&#x27;Remote end closed connection without response&#x27;)&#x27;: /cxservices/api/v1/chimerax/jobs/96HDQ3KC48O7GVIZ/files/output.fa<br>
+Alignment identifier is 1<br>
+Showing conservation header (&quot;seq_conservation&quot; residue attribute) for alignment 1<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/matchmaker.html">matchmaker</a> #1 to #2</div><div class="cxcmd_as_cmd"><a href="cxcmd:matchmaker #1 to #2">matchmaker #1 to #2</a></div></div>
+                    <table border=1 cellpadding=4 cellspacing=0>
+                        <tr>
+                            <th colspan="2">Parameters</th>
+                        </tr>
+                        <tr>
+                            <td>Chain pairing</td>
+                            <td>bb</td>
+                        </tr>
+                        <tr>
+                            <td>Alignment algorithm</td>
+                            <td>Needleman-Wunsch</td>
+                        </tr>
+                        <tr>
+                            <td>Similarity matrix</td>
+                            <td>BLOSUM-62</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>SS fraction</td>
+                            <td>0.3</td>
+                        </tr>
+                        <tr>
+                            <td>Gap open (HH/SS/other)</td>
+                            <td>18/18/6</td>
+                        </tr>
+                        <tr>
+                            <td>Gap extend</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SS matrix</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th></th> <th>H</th> <th>S</th> <th>O</th>
+                                    </tr>
+                                    <tr>
+                                        <th>H</th> <td align="right">6</td> <td align="right">-9</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th> <td></td> <td align="right">6</td> <td align="right">-6</td>
+                                    </tr>
+                                    <tr>
+                                        <th>O</th> <td></td> <td></td> <td align="right">4</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr> <td>Iteration cutoff</td> <td>2</td></tr>
+                    </table>
+                <br/>Matchmaker 1b68, chain A (#2) with Apolipoprotein_predicted_model.pdb, chain A (#1), sequence alignment score = 831.4<br>
+RMSD between 127 pruned atom pairs is 0.773 angstroms; (across all 138 pairs: 1.361)<br>
+<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:view">view</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/set.html">set</a> bgColor white</div><div class="cxcmd_as_cmd"><a href="cxcmd:set bgColor white">set bgColor white</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #1 cornflower blue</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #1 cornflower blue">color #1 cornflower blue</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #1 goldenrod</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #1 goldenrod">color #1 goldenrod</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> #2 cornflower blue</div><div class="cxcmd_as_cmd"><a href="cxcmd:color #2 cornflower blue">color #2 cornflower blue</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> #1 #2 models</div><div class="cxcmd_as_cmd"><a href="cxcmd:label #1 #2 models">label #1 #2 models</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> height 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:label height 3">label height 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#mousemode">ui mousemode</a> right &quot;move label&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui mousemode right &quot;move label&quot;">ui mousemode right &quot;move label&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image4.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image4.png supersample 3">save C:\ProgramData\ChimeraX\image4.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Render/Select by Attribute&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Render/Select by Attribute&quot;">ui tool show &quot;Render/Select by Attribute&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html#byattribute">color byattribute</a> a:bfactor #!1 target c palette 0.19,blue:0.525,white:0.86,red</div><div class="cxcmd_as_cmd"><a href="cxcmd:color byattribute a:bfactor #!1 target c palette 0.19,blue:0.525,white:0.86,red">color byattribute a:bfactor #!1 target c palette 0.19,blue:0.525,white:0.86,red</a></div></div>174 residues, atom bfactor range 0.19 to 0.86<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> &quot;Show Sequence Viewer&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show &quot;Show Sequence Viewer&quot;">ui tool show &quot;Show Sequence Viewer&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/sequence.html#chain">sequence chain</a> #1/A</div><div class="cxcmd_as_cmd"><a href="cxcmd:sequence chain #1/A">sequence chain #1/A</a></div></div>Alignment identifier is 1/A<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/select.html">select</a> #1:162-165</div><div class="cxcmd_as_cmd"><a href="cxcmd:select #1:162-165">select #1:162-165</a></div></div>39 atoms, 38 bonds, 4 residues, 1 model selected<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:surface">surface</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/color.html">color</a> (#!1 &amp; sel) yellow</div><div class="cxcmd_as_cmd"><a href="cxcmd:color (#!1 &amp; sel) yellow">color (#!1 &amp; sel) yellow</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image5.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image5.png supersample 3">save C:\ProgramData\ChimeraX\image5.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/view.html">view</a> sel</div><div class="cxcmd_as_cmd"><a href="cxcmd:view sel">view sel</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/surface.html">surface</a></div><div class="cxcmd_as_cmd"><a href="cxcmd:surface">surface</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/transparency.html">transparency</a> 60</div><div class="cxcmd_as_cmd"><a href="cxcmd:transparency 60">transparency 60</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/show.html#hide">hide</a> surfaces</div><div class="cxcmd_as_cmd"><a href="cxcmd:hide surfaces">hide surfaces</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/ui.html#tool-show">ui tool show</a> H-Bonds</div><div class="cxcmd_as_cmd"><a href="cxcmd:ui tool show H-Bonds">ui tool show H-Bonds</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/hbonds.html">hbonds</a> sel color #00aa00 select true reveal true log true</div><div class="cxcmd_as_cmd"><a href="cxcmd:hbonds sel color #00aa00 select true reveal true log true">hbonds sel color #00aa00 select true reveal true log true</a></div></div><pre>Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	1 Apolipoprotein_predicted_model.pdb
+	2 1b68
+
+20 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+Apolipoprotein_predicted_model.pdb #1/A LEU 162 N    Apolipoprotein_predicted_model.pdb #1/A HIS 158 O   no hydrogen  3.085  N/A
+Apolipoprotein_predicted_model.pdb #1/A LEU 162 N    1b68 #2/A HIS 140 O                                 no hydrogen  3.350  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 163 N    Apolipoprotein_predicted_model.pdb #1/A LEU 159 O   no hydrogen  2.811  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 163 N    1b68 #2/A LEU 141 O                                 no hydrogen  2.905  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 163 NE   Apolipoprotein_predicted_model.pdb #1/A GLN 59 OE1  no hydrogen  2.943  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 163 NE   1b68 #2/A GLN 41 OE1                                no hydrogen  3.093  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 163 NH1  Apolipoprotein_predicted_model.pdb #1/A GLN 59 OE1  no hydrogen  3.069  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 163 NH2  1b68 #2/A HOH 193 O                                 no hydrogen  2.997  N/A
+Apolipoprotein_predicted_model.pdb #1/A LYS 164 N    Apolipoprotein_predicted_model.pdb #1/A ARG 160 O   no hydrogen  3.082  N/A
+Apolipoprotein_predicted_model.pdb #1/A LYS 164 N    1b68 #2/A ARG 142 O                                 no hydrogen  3.256  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 165 N    Apolipoprotein_predicted_model.pdb #1/A LYS 161 O   no hydrogen  2.954  N/A
+Apolipoprotein_predicted_model.pdb #1/A LEU 166 N    Apolipoprotein_predicted_model.pdb #1/A LEU 162 O   no hydrogen  2.841  N/A
+Apolipoprotein_predicted_model.pdb #1/A LEU 167 N    Apolipoprotein_predicted_model.pdb #1/A ARG 163 O   no hydrogen  3.140  N/A
+Apolipoprotein_predicted_model.pdb #1/A ARG 168 N    Apolipoprotein_predicted_model.pdb #1/A LYS 164 O   no hydrogen  3.276  N/A
+Apolipoprotein_predicted_model.pdb #1/A ASP 169 N    Apolipoprotein_predicted_model.pdb #1/A ARG 165 O   no hydrogen  2.995  N/A
+1b68 #2/A LEU 148 N                                  Apolipoprotein_predicted_model.pdb #1/A LEU 162 O   no hydrogen  2.696  N/A
+1b68 #2/A LEU 149 N                                  Apolipoprotein_predicted_model.pdb #1/A ARG 163 O   no hydrogen  3.060  N/A
+1b68 #2/A ARG 150 N                                  Apolipoprotein_predicted_model.pdb #1/A LYS 164 O   no hydrogen  3.001  N/A
+1b68 #2/A ASP 151 N                                  Apolipoprotein_predicted_model.pdb #1/A ARG 165 O   no hydrogen  2.801  N/A
+1b68 #2/A HOH 293 O                                  Apolipoprotein_predicted_model.pdb #1/A LYS 164 O   no hydrogen  2.124  N/A
+</pre><br/>20 hydrogen bonds found<br>
+<div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/label.html">label</a> (#!1-2 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</div><div class="cxcmd_as_cmd"><a href="cxcmd:label (#!1-2 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;">label (#!1-2 &amp; sel) text &quot;{0.name} {0.number}{0.insertion_code}&quot;</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/save.html">save</a> C:\ProgramData\ChimeraX\image6.png supersample 3</div><div class="cxcmd_as_cmd"><a href="cxcmd:save C:\ProgramData\ChimeraX\image6.png supersample 3">save C:\ProgramData\ChimeraX\image6.png supersample 3</a></div></div><div class="cxcmd"><div class="cxcmd_as_doc"><a href="help:user/commands/log.html#save">log save</a> C:/ProgramData/ChimeraX/Apolipoprotein_log.html</div><div class="cxcmd_as_cmd"><a href="cxcmd:log save C:/ProgramData/ChimeraX/Apolipoprotein_log.html">log save C:/ProgramData/ChimeraX/Apolipoprotein_log.html</a></div></div></body>
+</html>
